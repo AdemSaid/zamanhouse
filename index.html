@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <title>Zaman House</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-22-1024.png"
+        alt="Zaman House logo"
+      />
+      <nav aria-label="main navigation">
+        <ul class="primary-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#home">About</a></li>
+          <li><a href="#home">Products</a></li>
+          <li><a href="#home">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="banner">
+        <img
+          src="https://images.unsplash.com/photo-1483137140003-ae073b395549?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+          alt=""
+        />
+      </div>
+      <section class="section-about">
+        <div class="section--inner">
+          <h1>Welcome to Zaman House</h1>
+          <p>Located in the heart of Uptown Houston, ...</p>
+        </div>
+      </section>
+      <section class="splide section-products">
+        <div class="splide__track section--inner">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="product-box">
+                <p>Product</p>
+                <p>price: $x.xx</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="product-box">
+                <p>Product</p>
+                <p>price: $x.xx</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="product-box">
+                <p>Product</p>
+                <p>price: $x.xx</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="product-box">
+                <p>Product</p>
+                <p>price: $x.xx</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="section--inner">
+          <h1>Location</h1>
+          <div class="location-container">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.9154903144236!2d-95.47953562484062!3d29.72220713376705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c1801d81d6cb%3A0xc67161dc733aeb26!2s5430%20Chimney%20Rock%20Rd%2C%20Houston%2C%20TX%2077081!5e0!3m2!1sen!2sus!4v1686511667297!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="location-info">
+              <ul>
+                <li>5430 Chimney Rock Rd</li>
+                <li>Houston, TX</li>
+                <li>77081</li>
+                <li><a href="">zamanhouse@gmail.com</a></li>
+                <li><a href="">Store hours</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-22-1024.png"
+        alt="Zaman House logo"
+      />
+      <div class="section-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#home">About</a></li>
+          <li><a href="#home">Products</a></li>
+          <li><a href="#home">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contact-links">
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Ubereats</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<script>
+  var productSlider = new Splide(".splide", {
+    type: "slide",
+    autoplay: false,
+    interval: 5000,
+    speed: 500,
+    easing: "ease",
+    perMove: 1,
+    perPage: 3,
+    pagination: true,
+    arrows: true,
+    rewind: true,
+    breakpoints: {
+      768: {
+        perPage: 2,
+      },
+    },
+  });
+  productSlider.mount();
+</script>
